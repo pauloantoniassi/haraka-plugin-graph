@@ -143,7 +143,7 @@ exports.handle_root = function (req, res) {
               }\
               if (period === "hour") {\
                 interval_id = setInterval(function() {\
-                  graph.updateOptions( { file: "data?period=" + period } );\
+                  graph.updateOptions( { file: "/graph/data?period=" + period } );\
                 }, 10000);\
               }\
             }\
