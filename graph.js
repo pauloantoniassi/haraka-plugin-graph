@@ -123,7 +123,7 @@ exports.handle_root = function (req, res) {
               }\
               var graph = new Dygraph(\
                 document.getElementById("graph"),\
-                "data?period=" + period,\
+                "/graph/data?period=" + period,\
                 {\
                     connectSeparatedPoints: true,\
                     fillGraph: true,\
